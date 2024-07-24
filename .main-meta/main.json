@@ -4,8 +4,8 @@
     "content": {
         "metaDataVersion": "1.3.0",
         "name": "com.microchip.mcu8.mplabx.project.pic18f56q24-adcc-signal-acq-at-faster-sampling-rate-mplab-mcc",
-        "version": " ",
-        "displayName": "",
+        "version": "1.0.0 ",
+        "displayName": "Signal Acquisition at Higher Sampling Frequency using ADCC of PIC18-Q24 Microcontroller Family",
         "projectName": "pic18f56q24-adcc-signal-acq-at-faster-sampling-rate-mplab-mcc",
         "shortDescription": "This code example demonstrates the higher sampling capability of 10-bit ADCC module of the PIC18F-Q24 microcontroller family by sampling the input signal at 300 ksps. Compatible PIC18-Q24 family of MCUs: PIC18F56/55/46/45/26/25/24Q24.",
         "ide": {
@@ -19,12 +19,12 @@
             }
         ],
         "dfp": {
-            "name": "",
-            "semverRange": ""
+            "name": "PIC18F-Q_DFP",
+            "semverRange": "^1.25.433"
         },
         "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "MCC",
+            "semverRange": ">=5.5.1"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -36,9 +36,17 @@
                 "versionRange": "*"
             }
         },
-        "author": "Prasad Aradhya",
-        "peripherals": [],
-        "keywords": [],
+        "author": "Usha G",
+        "peripherals": [
+				"SPI",
+				"DAC",
+				"UART",
+				"ADCC",
+				"DMA",
+				"TMR",
+				"FVR"
+		],
+        "keywords": ["Data Visualizer","Speed","Pulse Signal","Signal Sampling"],
         "additionalData": {
             "longDescription": {
                 "metaDataVersion": "1.0.0",
