@@ -40,7 +40,7 @@ Therefore, frequency of signal, f = 1 / (Total no of samples per cycle * Timer 2
 
 **Note:** If the number of DAC samples in the pulse signal is kept constant, then frequency of the signal can be changed by changing the Timer 2 period. 
 
-The generated signal by DAC module is fed as an input to the ADCC peripheral by using the GPIO pin RA2.
+The DAC output signal is fed to the ADCC input channel through pin RA2.
 
 In this code example, the firmware is developed to sample the input signal at two different sampling frequen ies: 50 ksps and 300 ksps. By default, the ADCC module samples the input signal at 300 ksps sampling frequency, and the user needs to press the on-board mechanical switch (SW0) to change the ADCC sampling frequency to 50 ksps and vice versa. The sampled ADCC conversion data are transmitted to the data visualizer in real-time through the Data Gateway Interface (DGI) of the power debugger board and reproduce the input signal in the Time Plot window. Additionally, the on-board user LED (LED0) blinks at a specific rate depending on the sampling frequency selection. The instructions for the user to change the sampling frequency via a switch press event, along with the selected sampling frequency value, are transmitted to the data visualizer tool using the on-board debugger module and displayed on the terminal window.
 
@@ -52,7 +52,7 @@ This application uses MPLAB<sup>®</sup> X IDE compiler and graphical code gener
 The following tools are used for this demo application:
 
 * [MPLAB® X IDE](https://www.microchip.com/mplab/mplab-x-ide) v6.20 or newer
-* [XC8 compiler](https://www.microchip.com/mplab/compilers) v2.46 or newer
+* [XC8 compiler](https://www.microchip.com/mplab/compilers) v2.50 or newer
 * [MPLAB® Code Configurator(MCC)](https://www.microchip.com/mplab/mplab-code-configurator) v5.7.1 or newer
 * [Standalone MPLAB® Data Visualizer 1.3.1665](https://www.microchip.com/en-us/tools-resources/debug/mplab-data-visualizer) or newer
 * [Microchip PIC18F-Q Series Device Support](https://packs.download.microchip.com) 1.25.433 or newer
