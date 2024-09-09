@@ -46,7 +46,7 @@
 				"TMR",
 				"FVR"
 		],
-        "keywords": ["Data Visualizer","Speed","Pulse Signal","Signal Sampling"],
+        "keywords": ["Data Visualizer","Speed","Pulse Signal","Signal Sampling", "CIP"],
         "additionalData": {
             "longDescription": {
                 "metaDataVersion": "1.0.0",
