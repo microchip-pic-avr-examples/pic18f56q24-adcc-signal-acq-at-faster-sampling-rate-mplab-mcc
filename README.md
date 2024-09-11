@@ -14,9 +14,9 @@
 
 The PIC18-Q24 family of microcontrollers are equipped with a rich set of Core Independent Peripherals (CIP), such as Analog-to-Digital Converter with Computation (ADCC), Direct Memory Access (DMA), Serial Peripheral Interface (SPI), Universal Asynchronous Receiver and Transmitter (UART) and so on. The integrated ADCC peripheral offers a 10-bit resolution that can handle conversion processes at speeds reaching up to 300 ksps.
 
-The main objective of this code example is to demonstrate the higher data sampling capabilities of the 10-bit ADCC peripheral within the PIC18-Q24 device family, thereby effectively reproducing the sampled input signal. Additionally, it highlights the CIP capabilities of 8-bit PIC microcontrollers (MCU) by effectively utilizing the ADCC, DMA, SPI and UART peripherals within the code example. Specifically, the DMA peripheral transfers the ADCC conversion results to the SPI peripheral data transmit buffer register without CPU intervention, whereas the SPI is used to output the received ADCC conversion results to the Data Visualizer tool in real time and at a faster rate.
+The main objective of this code example is to demonstrate the higher data sampling capabilities of the 10-bit ADCC peripheral within the PIC18-Q24 device family, thereby effectively reproducing the sampled input signal. Additionally, it highlights the CIP capabilities of 8-bit PIC® microcontrollers (MCU) by effectively utilizing the ADCC, DMA, SPI and UART peripherals within the code example. Specifically, the DMA peripheral transfers the ADCC conversion results to the SPI peripheral data transmit buffer register without CPU intervention, whereas the SPI is used to output the received ADCC conversion results to the Data Visualizer tool in real time and at a faster rate.
 
-This code example is developed using the PIC18F56Q24 MCU. However, it is relevant to all the 8-bit PIC® microcontrollers families that are supported by a 10-bit ADCC module capable of sampling input signals up to 300 ksps.
+This code example is developed using the PIC18F56Q24 MCU. However, it is relevant to all the 8-bit PIC microcontrollers families that are supported by a 10-bit ADCC module capable of sampling input signals up to 300 ksps.
 
 ## Related Documentation
 
@@ -42,7 +42,7 @@ Therefore, frequency of signal, f = 1 / (Total no of samples per cycle * TMR2 pe
 
 The DAC output signal is fed to the ADCC input channel through pin RA2.
 
-In this code example, the firmware is developed to sample the input signal at two different sampling frequen ies: 50 ksps and 300 ksps. By default, the ADCC module samples the input signal at 300 ksps sampling frequency, and the user needs to press the on-board mechanical switch (SW0) to change the ADCC sampling frequency to 50 ksps and vice versa. The sampled ADCC conversion data are transmitted to the Data Visualizer in real time through the Data Gateway Interface (DGI) of the power debugger board and reproduce the input signal in the Time Plot window. Additionally, the on-board user LED (LED0) blinks at a specific rate depending on the sampling frequency selection. The instructions for the user to change the sampling frequency via a switch press event, along with the selected sampling frequency value, are transmitted to the Data Visualizer tool using the on-board debugger module and displayed on the terminal window.
+In this code example, the firmware is developed to sample the input signal at two different sampling frequen ies: 50 ksps and 300 ksps. By default, the ADCC module samples the input signal at 300 ksps sampling frequency, and the user needs to press the on-board mechanical switch (SW0) to change the ADCC sampling frequency to 50 ksps and vice versa. The sampled ADCC conversion data are transmitted to the Data Visualizer in real time through the Data Gateway Interface (DGI) of the power debugger board and reproduce the input signal in the Time Plot window. Additionally, the on-board user LED (LED0) blinks at a specific rate depending on the sampling frequency selection. The instructions for the user to change the sampling frequency via a switch press event, along with the selected sampling frequency value, are transmitted to the Data Visualizer tool using the on-board debugger module and displayed on the Terminal Window.
 
 
 ## Software Used
@@ -111,7 +111,7 @@ The DGI SPI mode of the Power Debugger board is used for transmitting data from 
 
 * The SPI1 peripheral is configured as a host with an 8 MHz peripheral clock and used to transmit the ADCC conversion data to the Data Visualizer tool through the Data Gateway Interface (DGI) of the Power Debugger board
 
-* The UART2 peripheral instance is used to display user instructions and the selected sampling rate for the ADCC peripheral in the terminal window of the Data Visualizer tool
+* The UART2 peripheral instance is used to display user instructions and the selected sampling rate for the ADCC peripheral in the Terminal Window of the Data Visualizer tool
 
 * In the project settings, the XC8 compiler optimization is set to optimization 2, which performs optimizations of all generic code generators and minimal assembly optimizations
 
@@ -129,7 +129,7 @@ Figure 3 shows the application firmware flow diagram of this code example.
 
 ## MPLAB Data Visualizer Configuration
 
-* Connect the hardware as explained in the ***Hardware Setup*** section.
+* Connect the hardware as explained in the *Hardware Setup* section.
 * To open the Time Plot and Terminal window on stand-alone MPLAB Data Visualizer tool, follow these steps:
 	1.	Steps to Open Time Plot Window in Data Visualizer
 	2.	Steps to Open Terminal Window in Data Visualizer
@@ -152,13 +152,13 @@ The ADCC conversion data is transmitted to the Data Visualizer in real time thro
   <br> <b>Figure 5.</b> Pop-up Window for SPI Interface<br>
 </p>
 
-4. To start displaying the ADC conversion result, click the ![doubleTriangleSymbol](images/doubleTriangleSymbol.png) (double triangle) symbol with the text “Show live data”, which appears at the center of the time plot window.
+4. To start displaying the ADC conversion result, click the ![doubleTriangleSymbol](images/doubleTriangleSymbol.png) (double triangle) symbol with the text “Show live data”, which appears at the center of the Time Plot window.
 
 **Steps to Open Terminal Window in MPLAB Data Visualizer**
 
-The user is provided with an option to choose a sampling frequency setting to be used for the ADCC peripheral from the supported frequencies by pressing the on-board switch SW0. These instructions are displayed on the Terminal window of the Data Visualizer. Additionally, the selected frequency is displayed on the Terminal window after the user selects the sampling frequency option. Follow the steps below to open and configure the terminal window.
+The user is provided with an option to choose a sampling frequency setting to be used for the ADCC peripheral from the supported frequencies by pressing the on-board switch SW0. These instructions are displayed on the Terminal Window of the Data Visualizer. Additionally, the selected frequency is displayed on the Terminal Window after the user selects the sampling frequency option. Follow the steps below to open and configure the Terminal Window.
 1. Open the stand-alone MPLAB Data Visualizer tool.
-2. Click the **Connections tab**, which is available on the top left of the Data Visualizer.
+2. Click the *Connections tab*, which is available on the top left of the Data Visualizer.
 3. Open the COM 15 settings window. By default, the Baud Rate is set to 9600. 
 
 **Note:** The COM port number can vary depending on the availability of the port.
@@ -180,10 +180,10 @@ The user is provided with an option to choose a sampling frequency setting to be
 
 ## Demo Operation
 
-* Ensure the hardware is connected as explained in the ***Hardware Setup*** section, and the Data Visualizer tool is setup as explained in the ***Data Visualizer Configuration*** section. 
+* Ensure the hardware is connected as explained in the *Hardware Setup* section, and the Data Visualizer tool is set up as explained in the *Data Visualizer Configuration* section
 * Download the firmware from [Microchip-Github](https://github.com/orgs/microchip-pic-avr-examples/repositories?q=Q24&type=all&language=&sort=) and open the project in MPLAB X IDE. Build the project to make sure there are no build errors. Refer to the [MPLAB User’s Guide](https://ww1.microchip.com/downloads/en/devicedoc/50002027d.pdf) for more details on how to build the project.
-* Program the microcontroller by clicking the ![programDeviceIcon](images/programDeviceIcon.png) (Make and Program Device) icon on MPLAB X IDE. 
-* The waveform below represents the pulse signal of 1 kHz frequency, generated using the DAC module.
+* Program the microcontroller by clicking the ![programDeviceIcon](images/programDeviceIcon.png) (Make and Program Device) icon on MPLAB X IDE 
+* The waveform below represents the pulse signal of 1 kHz frequency, generated using the DAC module
 
 <p align="center">
   <img width=auto height=auto src="images/pulseSignalGeneration.png">
@@ -204,18 +204,18 @@ The user is provided with an option to choose a sampling frequency setting to be
   <br> <b>Figure 10.</b> Reproduced Signal at 300 ksps Sampling Rate<br>
 </p>
 
-**Note:**: In the Time Plot window, the X-axis represents time and the Y-axis represents ADC count value. The ADC conversion result is left justified, and the resultant 8-bit data stored in the ADRESH register is plotted on the time-plot window.
+**Note:** In the Time Plot window, the X-axis represents time and the Y-axis represents ADC count value. The ADC conversion result is left justified, and the resultant 8-bit data stored in the ADRESH register is plotted on the Time Plot window.
 
 
-* Now Press the switch (SW0) to change the ADCC sampling frequency to 50 ksps
-* The configured sampling frequency and the instructions for the user to switch the sampling rate are displayed on the terminal window, as shown below 
+* Press the switch (SW0) to change the ADCC sampling frequency to 50 ksps
+* The configured sampling frequency and the instructions for the user to switch the sampling rate are displayed on the Terminal Window, as shown below 
 
 <p align="center">
   <img width=auto height=auto src="images/terminalWindowAt50ksps.png">
    <br> <b>Figure 11.</b> Terminal Window<br>
 </p>
 
-* Additionally, the user LED on the board will also blink at a slower rate than with the 300 ksps sampling rate setting.
+* Additionally, the user LED on the board will also blink at a slower rate than with the 300 ksps sampling rate setting
 * The figure below shows the reproduced signal, sampled at a rate of 50 ksps using the ADCC module. Note that in the reproduced signal, some samples are missing from the positive and negative peaks of the signal.
 
 <p align="center">
@@ -223,7 +223,7 @@ The user is provided with an option to choose a sampling frequency setting to be
   <br> <b>Figure 12.</b> Reproduced Signal at 50 ksps Sampling Rate<br>
 </p>
 
-**Note:**: In the Time Plot window, the X-axis represents time and the Y-axis represents ADC count value. The ADC conversion result is left justified, and the resultant 8-bit data stored in the ADRESH register is plotted on the time-plot window.
+**Note:** In the Time Plot window, the X-axis represents time and the Y-axis represents ADC count value. The ADC conversion result is left justified, and the resultant 8-bit data stored in the ADRESH register is plotted on the Time Plot window.
 
 ## Conclusion
 
