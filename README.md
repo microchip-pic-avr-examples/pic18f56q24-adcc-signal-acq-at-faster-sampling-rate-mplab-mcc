@@ -42,7 +42,7 @@ Therefore, frequency of signal, f = 1 / (Total no of samples per cycle * TMR2 pe
 
 The DAC output signal is fed to the ADCC input channel through pin RA2.
 
-In this code example, the firmware is developed to sample the input signal at two different sampling frequen ies: 50 ksps and 300 ksps. By default, the ADCC module samples the input signal at 300 ksps sampling frequency, and the user needs to press the on-board mechanical switch (SW0) to change the ADCC sampling frequency to 50 ksps and vice versa. The sampled ADCC conversion data are transmitted to the Data Visualizer in real time through the Data Gateway Interface (DGI) of the power debugger board and reproduce the input signal in the Time Plot window. Additionally, the on-board user LED (LED0) blinks at a specific rate depending on the sampling frequency selection. The instructions for the user to change the sampling frequency via a switch press event, along with the selected sampling frequency value, are transmitted to the Data Visualizer tool using the on-board debugger module and displayed on the Terminal Window.
+In this code example, the firmware is developed to sample the input signal at two different sampling frequen ies: 50 ksps and 300 ksps. By default, the ADCC module samples the input signal at 300 ksps sampling frequency, and the user needs to press the on-board mechanical switch (SW0) to change the ADCC sampling frequency to 50 ksps and vice versa. The sampled ADCC conversion data are transmitted to the Data Visualizer in real time through the Data Gateway Interface (DGI) of the power debugger board and reproduce the input signal in the Time Plot window. Additionally, the on-board user LED (LED0) blinks at a specific rate depending on the sampling frequency selection. The instructions for the user to change the sampling frequency via a switch press event, along with the selected sampling frequency value, are transmitted to the Data Visualizer tool using the on-board debugger module and displayed on the Terminal window.
 
 
 ## Software Used
@@ -111,7 +111,7 @@ The DGI SPI mode of the Power Debugger board is used for transmitting data from 
 
 * The SPI1 peripheral is configured as a host with an 8 MHz peripheral clock and used to transmit the ADCC conversion data to the Data Visualizer tool through the Data Gateway Interface (DGI) of the Power Debugger board
 
-* The UART2 peripheral instance is used to display user instructions and the selected sampling rate for the ADCC peripheral in the Terminal Window of the Data Visualizer tool
+* The UART2 peripheral instance is used to display user instructions and the selected sampling rate for the ADCC peripheral in the Terminal window of the Data Visualizer tool
 
 * In the project settings, the XC8 compiler optimization is set to optimization 2, which performs optimizations of all generic code generators and minimal assembly optimizations
 
@@ -132,9 +132,9 @@ Figure 3 shows the application firmware flow diagram of this code example.
 * Connect the hardware as explained in the *Hardware Setup* section.
 * To open the Time Plot and Terminal window on stand-alone MPLAB Data Visualizer tool, follow these steps:
 	1.	Steps to Open Time Plot Window in Data Visualizer
-	2.	Steps to Open Terminal Window in Data Visualizer
+	2.	Steps to Open Terminal window in Data Visualizer
 
-**Steps to open Time Plot window on MPLAB Data Visualizer**
+**Steps to Open Time Plot Window on MPLAB Data Visualizer**
 
 The ADCC conversion data is transmitted to the Data Visualizer in real time through the Power Debugger, and the sampled input signal is reproduced on the Time Plot window. Follow the steps below to open and configure the Time Plot window on the Data Visualizer.
 1. Enable the DGI interface of the power debugger to display the supported DGI interface. 
@@ -156,9 +156,9 @@ The ADCC conversion data is transmitted to the Data Visualizer in real time thro
 
 **Steps to Open Terminal Window in MPLAB Data Visualizer**
 
-The user is provided with an option to choose a sampling frequency setting to be used for the ADCC peripheral from the supported frequencies by pressing the on-board switch SW0. These instructions are displayed on the Terminal Window of the Data Visualizer. Additionally, the selected frequency is displayed on the Terminal Window after the user selects the sampling frequency option. Follow the steps below to open and configure the Terminal Window.
+The user is provided with an option to choose a sampling frequency setting to be used for the ADCC peripheral from the supported frequencies by pressing the on-board switch SW0. These instructions are displayed on the Terminal window of the Data Visualizer. Additionally, the selected frequency is displayed on the Terminal window after the user selects the sampling frequency option. Follow the steps below to open and configure the Terminal window.
 1. Open the stand-alone MPLAB Data Visualizer tool.
-2. Click the *Connections tab*, which is available on the top left of the Data Visualizer.
+2. Click the **Connections** tab, which is available on the top left of the Data Visualizer.
 3. Open the COM 15 settings window. By default, the Baud Rate is set to 9600. 
 
 **Note:** The COM port number can vary depending on the availability of the port.
@@ -208,7 +208,7 @@ The user is provided with an option to choose a sampling frequency setting to be
 
 
 * Press the switch (SW0) to change the ADCC sampling frequency to 50 ksps
-* The configured sampling frequency and the instructions for the user to switch the sampling rate are displayed on the Terminal Window, as shown below 
+* The configured sampling frequency and the instructions for the user to switch the sampling rate are displayed on the Terminal window, as shown below 
 
 <p align="center">
   <img width=auto height=auto src="images/terminalWindowAt50ksps.png">
