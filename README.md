@@ -20,7 +20,7 @@ This code example is developed using the PIC18F56Q24 MCU. However, it is relevan
 
 ## Related Documentation
 
-* [PIC18F56Q24 Product Page](https://www.microchip.com/en-us/product/PIC18F56q24)
+* [PIC18F56Q24 Product Page](https://www.microchip.com/en-us/product/pic18f56q24?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_PIC18-Q24&utm_content=pic18f56q24-adcc-signal-acq-at-faster-sampling-rate-mplb-mcc-github&utm_bu=MCU08)
 * [PIC18-Q24 Product Family of Microcontrollers](https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/pic-mcus/pic18-q24?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_PIC18-Q24&utm_content=pic18f56q24-adcc-signal-acq-at-faster-sampling-rate-mplb-mcc-github&utm_bu=MCU08)
 * [PIC18F56Q24 Code Examples on MPLAB® Discover](https://mplab-discover.microchip.com/v2?dsl=PIC18F56Q24)
 * [PIC18-Q24 Family Code Examples on GitHub](https://github.com/orgs/microchip-pic-avr-examples/repositories?q=Q24&type=all&language=&sort=)
@@ -69,7 +69,7 @@ newer
 ## Hardware Used
 
 * [PIC18F56Q24 Curiosity Nano board](https://www.microchip.com/en-us/development-tool/EV01E86A?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_PIC18-Q24&utm_content=pic18f56q24-adcc-signal-acq-at-faster-sampling-rate-mplb-mcc-github&utm_bu=MCU08)
-* [Curiosity Nano base for Click boards™](https://www.microchip.com/developmenttools/ProductDetails/AC164162)
+* [Curiosity Nano base for Click boards™](https://www.microchip.com/en-us/development-tool/AC164162?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_PIC18-Q24&utm_content=pic18f56q24-adcc-signal-acq-at-faster-sampling-rate-mplb-mcc-github&utm_bu=MCU08)
 * [Power Debugger board](https://www.microchip.com/en-us/development-tool/ATPOWERDEBUGGER?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_PIC18-Q24&utm_content=pic18f56q24-adcc-signal-acq-at-faster-sampling-rate-mplb-mcc-github&utm_bu=MCU08)
 
 ## Hardware Setup
