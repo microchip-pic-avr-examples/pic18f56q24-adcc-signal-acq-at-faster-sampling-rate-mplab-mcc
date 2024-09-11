@@ -76,7 +76,7 @@ newer
 
 <p align="center">
   <img width=auto height=auto src="images/hardwareSetup.png">
-  <br>Figure 2. Hardware Setup<br>
+  <br> <b>Figure 2.</b> Hardware Setup<br>
 </p>
 
 The DGI SPI mode of the Power Debugger board is used for transmitting data from the PIC18F56Q24 microcontroller to the Data Visualizer tool. The table below provides the required connections between the PIC18F56Q24 Curiosity Nano and Power Debugger boards.  Also, both boards are powered up by a 5V supply.
@@ -121,7 +121,7 @@ Figure 3 shows the application firmware flow diagram of this code example.
 
 <p align="center">
   <img width=auto height=auto src="images/applicationFlowDiagram.png">
-  <br>Figure 3. Application Flow Diagram<br>
+  <br> <b>Figure 3.</b> Application Flow Diagram<br>
 </p>
 
 **Note:** The pulse signal generation and signal reproduction for the Data Visualizer are facilitated using CIPs, allowing the process to run independently of the CPU. Consequently, the application firmware does not require any additional coding to achieve these functions.
@@ -142,14 +142,14 @@ The ADCC conversion data is transmitted to the Data Visualizer in real time thro
 
 <p align="center">
   <img width=auto height=auto src="images/spiInterfacePowerDebugger.png">
-  <br>Figure 4. Select SPI DGI Interface on Power Debugger<br>
+  <br> <b>Figure 4.</b> Select SPI DGI Interface on Power Debugger<br>
 </p>
 
 3. From the pop-up window that appears, select the “Plot Raw” option and close the pop-up window.
 
 <p align="center">
   <img width=auto height=auto src="images/pop-upWindowTimeplot.png">
-  <br>Figure 5. Pop-up Window for SPI Interface<br>
+  <br> <b>Figure 5.</b> Pop-up Window for SPI Interface<br>
 </p>
 
 4. To start displaying the ADC conversion result, click the ![doubleTriangleSymbol](images/doubleTriangleSymbol.png) (double triangle) symbol with the text “Show live data”, which appears at the center of the time plot window.
@@ -165,14 +165,14 @@ The user is provided with an option to choose a sampling frequency setting to be
 
 <p align="center">
   <img width=auto height=auto src="images/uartInterfaceCnanoBoard.png">
-  <br>Figure 6. UART Interafce on PIC18F56Q24 Cnano Board<br>
+  <br> <b>Figure 6.</b> UART Interafce on PIC18F56Q24 Cnano Board<br>
 </p>
 
 4. Click the ![rightAlignedSymbol](images/rightAlignedSymbol.png) symbol on the COM 15 tab. From the pop-up window that appears, select the “Send to Terminal” option and close the pop-up window.
 
 <p align="center">
   <img width=auto height=auto src="images/pop-upOnTerminalWindow.png">
-  <br>Figure 7. Pop-up Window for UART Interface<br>
+  <br> <b>Figure 7.</b> Pop-up Window for UART Interface<br>
 </p>
 
 5. Text messages start printing on the Terminal window as soon as the firmware is loaded to the microcontroller.
@@ -187,21 +187,21 @@ The user is provided with an option to choose a sampling frequency setting to be
 
 <p align="center">
   <img width=auto height=auto src="images/pulseSignalGeneration.png">
-  <br>Figure 8. Pulse Signal Generation Using DAC<br>
+  <br> <b>Figure 8.</b> Pulse Signal Generation Using DAC<br>
 </p>
 
 * Once the programming is completed, observe the user instructions on the Terminal window of the Data Visualizer tool. The user LED on the board will start blinking. 
 
 <p align="center">
   <img width=auto height=auto src="images/terminalWindowAt300ksps.png">
-  <br>Figure 9. Terminal Window<br>
+  <br> <b>Figure 9.</b> Terminal Window<br>
 </p>
 
 * By default, the application firmware is configured to sample the input signal at a rate of 300 ksps using the ADCC module. The figure below shows the reproduced signal, when it is sampled at 300 ksps using the ADCC module.
 
 <p align="center">
   <img width=auto height=auto src="images/reproducedSignalAt300ksps.png">
-  <br>Figure 10. Reproduced Signal at 300 ksps Sampling Rate<br>
+  <br> <b>Figure 10.</b> Reproduced Signal at 300 ksps Sampling Rate<br>
 </p>
 
 **Note:**: In the Time Plot window, the X-axis represents time and the Y-axis represents ADC count value. The ADC conversion result is left justified, and the resultant 8-bit data stored in the ADRESH register is plotted on the time-plot window.
@@ -212,7 +212,7 @@ The user is provided with an option to choose a sampling frequency setting to be
 
 <p align="center">
   <img width=auto height=auto src="images/terminalWindowAt50ksps.png">
-   <br>Figure 11. Terminal Window<br>
+   <br> <b>Figure 11.</b> Terminal Window<br>
 </p>
 
 * Additionally, the user LED on the board will also blink at a slower rate than with the 300 ksps sampling rate setting.
@@ -220,7 +220,7 @@ The user is provided with an option to choose a sampling frequency setting to be
 
 <p align="center">
   <img width=auto height=auto src="images/reproducedSignal50ksps.png">
-  <br>Figure 12. Reproduced Signal at 50 ksps Sampling Rate<br>
+  <br> <b>Figure 12.</b> Reproduced Signal at 50 ksps Sampling Rate<br>
 </p>
 
 **Note:**: In the Time Plot window, the X-axis represents time and the Y-axis represents ADC count value. The ADC conversion result is left justified, and the resultant 8-bit data stored in the ADRESH register is plotted on the time-plot window.
